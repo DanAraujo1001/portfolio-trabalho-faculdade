@@ -1,0 +1,41 @@
+@import url('global.css');
+
+/* Conteudo da página */
+main {
+    height: auto;
+}
+
+.conteudo-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem;
+}
+/* FIM Conteudo da página */
+
+/* Nome 'SKILLS' */
+.conteudo-skills h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding: 0 10px;
+}
+/* FIM Nome 'SKILLS' */
+
+/* Estilizando as imagens */
+.skills-progresso {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+/* FIM Estilizando as imagens */
+
+footer {
+    height: 7vh; /*Não estava estava respeitando o estilo do global.css*/ 
+    max-height: 40px;
+}

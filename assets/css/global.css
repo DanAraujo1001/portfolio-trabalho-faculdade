@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #E3E4FC;
+}
+
+/* Estrutura padrão da página */
+
+body {
+    max-width: 1920px;
+    /*Limitar a distorção dos elementos quando tira o zoom*/
+    margin: 0 auto;
+    background-color: #040D1A;
+    box-shadow: 0 -150px 400px #000;
+    background-color: #E3E4FC;
+}
+
+.body-container {
+    background-color: #E3E4FC;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+main {
+    width: 100%;
+    height: 83%;
+}
+
+footer {
+    width: 100%;
+    height: 7%;
+    background-color: #051833;
+    border-top: 1px solid #A1A8B2;
+    font-size: .9rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fim Estrutura padrão da página */
+
+/* Header */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-home {
+    background-color: #040D1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    border-bottom: 2px solid #A1A8B2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 1rem #1B1817;
+    max-width: 1920px;
+}
+
+.espaco-header-home {
+    height: 71px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar ul li a {
+    color: #A1AAB2;
+    transition: .5s;
+}
+
+.nav-bar ul li a:hover {
+    color: #FFF;
+}
+
+.pagina-atual {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.nav-barra {
+    border: 1px solid #A1AAB2;
+
+}
+
+.header-home-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 875px) {
+    .nav-bar {
+        position: absolute;
+        top: 74px;
+        right: 0;
+        width: 40vw;
+        height: 100vh;
+        background-color: #051833;
+        transform: translateX(100%);
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+        gap: 4rem;
+    }
+
+    .nav-barra {
+        display: none;
+    }
+
+    .header-home-menu {
+        display: block;
+    }
+
+    .nav-bar.active {
+        transform: translateX(0);
+    }
+}
+
+/* Fim HEADER */
